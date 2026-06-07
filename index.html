@@ -1,101 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogosMath</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+<title>LogosMath</title>
 
-        body{
-            margin:0;
-            background:#f5f5f5;
-            color:#222;
-            font-family: "Helvetica Neue", sans-serif;
-        }
+<style>
 
-        .hero{
-            height:100vh;
+body{
+    margin:0;
+    height:100vh;
 
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
+    background:#0f172a;
+    color:#f8fafc;
 
-            text-align:center;
-        }
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-        h1{
-            font-size:4rem;
-            margin-bottom:10px;
-            letter-spacing:2px;
-        }
+    overflow:hidden;
 
-        h2{
-            font-weight:300;
-            color:#666;
-            margin-bottom:20px;
-        }
+    font-family:Georgia, serif;
+}
 
-        p{
-            font-size:1.2rem;
-            color:#555;
-        }
+.background-math{
+    position:absolute;
+    inset:0;
 
-        .buttons{
-            margin-top:40px;
-        }
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-        .btn{
+    font-size:6rem;
 
-            display:inline-block;
+    color:rgba(255,255,255,0.04);
 
-            padding:14px 28px;
-            margin:10px;
+    user-select:none;
+}
 
-            border:1px solid #222;
+.container{
+    text-align:center;
+    z-index:10;
+    padding:20px;
+}
 
-            text-decoration:none;
-            color:#222;
+.logo{
+    font-size:4rem;
+    letter-spacing:6px;
+    margin-bottom:10px;
+}
 
-            transition:0.3s;
-        }
+.subtitle{
+    font-size:1.2rem;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:40px;
+}
 
-        .btn:hover{
-            background:#222;
-            color:white;
-        }
+.formula{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#e2e8f0;
+}
 
-    </style>
+.description{
+    color:#94a3b8;
+    margin-bottom:50px;
+}
+
+.btn{
+    display:inline-block;
+
+    margin:8px;
+    padding:14px 28px;
+
+    border:1px solid #94a3b8;
+
+    color:white;
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#0f172a;
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="hero">
+<div class="background-math">
+    ∫ f(x)dx &nbsp;&nbsp; e<sup>iπ</sup>+1=0 &nbsp;&nbsp; Σ
+</div>
 
-    <h1>LogosMath</h1>
+<div class="container">
 
-    <h2>Mathematics & Learning</h2>
-
-    <p>
-        数学の美しさを探究するサイト
-    </p>
-
-    <div class="buttons">
-
-        <a class="btn" href="#">
-            基本問題
-        </a>
-
-        <a class="btn" href="#">
-            入試問題
-        </a>
-
-        <a class="btn" href="#">
-            コラム
-        </a>
-
+    <div class="logo">
+        LOGOSMATH
     </div>
+
+    <div class="subtitle">
+        Mathematics<br>
+        Logic<br>
+        Education
+    </div>
+
+    <div class="formula">
+        e<sup>iπ</sup> + 1 = 0
+    </div>
+
+    <div class="description">
+        思考の海を冒険する
+    </div>
+
+    <a href="#" class="btn">基本問題</a>
+    <a href="#" class="btn">入試問題</a>
+    <a href="#" class="btn">コラム</a>
 
 </div>
 
